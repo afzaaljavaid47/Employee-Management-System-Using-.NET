@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EMSModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Employees">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="gender" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="address" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="zipcode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="state" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="phonenumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="userID" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="username" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="gender" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="EMSEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Employees" EntityType="Self.Employees" />
+    <EntitySet Name="Users" EntityType="Self.Users" />
+  </EntityContainer>
+</Schema>

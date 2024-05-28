@@ -1,0 +1,12 @@
+D:\WWW\.NET\Employee Management System\EMS.DB\bin\Debug\EMS.DB.dll.config
+D:\WWW\.NET\Employee Management System\EMS.DB\bin\Debug\EMS.DB.dll
+D:\WWW\.NET\Employee Management System\EMS.DB\bin\Debug\EMS.DB.pdb
+D:\WWW\.NET\Employee Management System\EMS.DB\bin\Debug\EntityFramework.dll
+D:\WWW\.NET\Employee Management System\EMS.DB\bin\Debug\EntityFramework.SqlServer.dll
+D:\WWW\.NET\Employee Management System\EMS.DB\bin\Debug\EntityFramework.xml
+D:\WWW\.NET\Employee Management System\EMS.DB\bin\Debug\EntityFramework.SqlServer.xml
+D:\WWW\.NET\Employee Management System\EMS.DB\obj\Debug\EMS.DB.csproj.AssemblyReference.cache
+D:\WWW\.NET\Employee Management System\EMS.DB\obj\Debug\EMS.DB.csproj.CoreCompileInputs.cache
+D:\WWW\.NET\Employee Management System\EMS.DB\obj\Debug\EMS.DB.csproj.CopyComplete
+D:\WWW\.NET\Employee Management System\EMS.DB\obj\Debug\EMS.DB.dll
+D:\WWW\.NET\Employee Management System\EMS.DB\obj\Debug\EMS.DB.pdb

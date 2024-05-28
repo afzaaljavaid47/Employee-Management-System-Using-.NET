@@ -1,0 +1,92 @@
+﻿@model IEnumerable<Employee_Management_System.Models.EmployeeModel>
+
+@{
+    ViewBag.Title = "Employees";
+    Layout = "~/Views/Employee/Dashboard.cshtml";
+}
+
+<h2>Employees</h2>
+@using (Html.BeginForm("SearchEmployee", "Employee"))
+{
+                <div class="form-group">
+                    <label>Search</label>
+                    <input type="search" name="search" class="form-control"/>
+                </div>
+                <input type="submit" value="Search" class="btn btn-primary"/>
+            }
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.gender)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.zipcode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.state)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.phonenumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.userID)
+            </th>
+            <th>
+                Operations
+            </th>
+            <th></th>
+        </tr>
+
+        @if (!Model.Any())
+        {
+            <tr>
+                <td colspan="9" class="text-center">No any employees exists in db</td>
+            </tr>
+        }
+        else
+        {
+            foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.gender)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.address)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.zipcode)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.state)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.phonenumber)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.userID)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "EditEmployee", new { id = item.id }) |
+                        @Html.ActionLink("Delete", "DeleteEmployee", new { id = item.id })
+                    </td>
+                </tr>
+            }
+        }
+
+    </table>

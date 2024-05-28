@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EMSModelStoreContainer" CdmEntityContainer="EMSEntities">
+    <EntitySetMapping Name="Employees">
+      <EntityTypeMapping TypeName="EMSModel.Employees">
+        <MappingFragment StoreEntitySet="Employees">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="zipcode" ColumnName="zipcode" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="phonenumber" ColumnName="phonenumber" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="EMSModel.Users">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
